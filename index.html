@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programming | البرمجة للخدمات البرمجية</title>
+    <!-- مكتبة الأيقونات FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- شريط التنقل -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="brand-logo">
+                <img src="programming.jpg" alt="Programming Logo">
+            </a>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#">الرئيسية</a></li>
+                <li><a href="#projects">خدماتنا</a></li>
+                <li><a href="#contact-section">تواصل معنا</a></li>
+            </ul>
+
+            <a href="#contact-section" class="nav-cta">اطلب خدمتك</a>
+
+            <div class="hamburger" id="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <header class="hero">
+            <div class="hero-glow"></div>
+            <div class="hero-content">
+                <h1>أكواد احترافية لتبني <span>مستقبل مشروعك</span></h1>
+                <p>اختر الخدمة البرمجية الرقمية المناسبة لك، املأ بياناتك وسنتواصل معك فوراً لمباشرة التنفيذ</p>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn-primary">استكشف الخدمات</a>
+                    <a href="#contact-section" class="btn-secondary">تواصل معنا</a>
+                </div>
+            </div>
+        </header>
+
+        <!-- قسم الخدمات -->
+        <section id="projects">
+            <h2>خدماتنا البرمجية</h2>
+            
+            <div class="projects-container">
+                
+                <!-- كرت 1 -->
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="web.png" class="base-img" alt="منصة كورسات تعليمية">
+                        <img src="html.png" class="hover-img" alt="تفاصيل المنصة">
+                        <div class="tech-badges">
+                            <img src="html.png" alt="HTML">
+                            <img src="css.png" alt="CSS">
+                        </div>
+                    </div>
+                    
+                    <div class="project-info">
+                        <h3>
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            منصة كورسات تعليمية
+                        </h3>
+                        <p class="project-description" style="font-size: 0.9rem; color: #e0e6ed; margin: 10px 0; line-height: 1.6; text-align: right;">
+                            تطوير منصة تعليمية متكاملة لاستعراض وتقديم الدورات التدريبية بشكل منظم وسلس، تضمن تجربة تصفح تفاعلية وممتازة للطلاب.
+                        </p>
+                        <div class="project-links">
+                            <a href="https://courses-website-wheat.vercel.app/" target="_blank" class="proj-link demo">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                            </a>
+                            <a href="#contact-section" class="order-service-btn" onclick="setService('منصة كورسات تعليمية')">طلب هذه الخدمة</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- كرت 2 -->
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="programming.png" class="base-img" alt="تصميم صفحة روابط">
+                        <img src="programming.png" class="hover-img" alt="تفاصيل صفحة الروابط">
+                        <div class="tech-badges">
+                            <img src="html.png" alt="HTML">
+                            <img src="css.png" alt="CSS">
+                        </div>
+                    </div>
+                    
+                    <div class="project-info">
+                        <h3>
+                            <i class="fa-solid fa-link service-icon"></i> 
+                            تصميم صفحة روابط
+                        </h3>
+                        <p class="project-description" style="font-size: 0.9rem; color: #e0e6ed; margin: 10px 0; line-height: 1.6; text-align: right;">صفحة روابط مخصصة تُوضع هذه الصفحة في "البايو" على منصات التواصل الاجتماعي (انستغرام، تيك توك، تويتر) لتوجيه المتابعين إلى جميع وجهاتك الرقمية بضغطة زر واحدة.</p>
+                        <div class="project-links">
+                            <a href="https://page-us.vercel.app/" target="_blank" class="proj-link demo">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                            </a>
+                            <a href="#contact-section" class="order-service-btn" onclick="setService('تصميم صفحة روابط البايو')">طلب هذه الخدمة</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- كرت 3 -->
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="protfoil1.png" class="base-img" alt="المشروع الأساسي">
+                        <img src="protfoil2.png" class="hover-img" alt="المشروع عند الحركة">
+                        <div class="tech-badges">
+                            <img src="html.png" alt="HTML">
+                            <img src="css.png" alt="CSS">
+                        </div>
+                    </div>
+                    
+                    <div class="project-info">
+                        <h3>
+                            <i class="fa-solid fa-user-tie service-icon"></i> 
+                            تصميم بورتفوليو شخصي
+                        </h3>
+                        <p class="project-description" style="font-size: 0.9rem; color: #e0e6ed; margin: 10px 0; line-height: 1.6; text-align: right;">
+                            موقع إلكتروني شخصي متكامل يمثل هويتك الرقمية. يُصمم هذا الملف ليعرض مهاراتك، خبراتك، وأبرز أعمالك السابقة بأسلوب احترافي يضمن ترك انطباع قوي لدى الشركات أو العملاء.
+                        </p>
+                        <div class="project-links">
+                            <a href="https://ytuyn.github.io/protfailForAhmed/" target="_blank" class="proj-link demo">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                            </a>
+                            <a href="#contact-section" class="order-service-btn" onclick="setService('تصميم بورتفوليو شخصي')">طلب هذه الخدمة</a>
+                        </div>
+                    </div>
+                </div> 
+
+                <!-- كرت 4 -->
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="system.png" class="base-img" alt="نظام حجز المواعيد">
+                        <img src="html2.png" class="hover-img" alt="معاينة نظام الحجز">
+                    </div>
+                    
+                    <div class="project-info">
+                        <h3>
+                            <i class="fa-solid fa-calendar-check service-icon"></i> 
+                            نظام حجز المواعيد الإلكتروني
+                        </h3>
+                        <p class="project-description" style="font-size: 0.9rem; color: #e0e6ed; margin: 10px 0; line-height: 1.6; text-align: right;">
+                            صفحة متكاملة لحجز المواعيد بسهولة وسلاسة؛ بمجرد أن يقوم العميل بتأكيد موعده، يقوم النظام تلقائياً بإرسال إشعار فوري عبر البريد الإلكتروني إلى مالك الموقع لمتابعة الحجز فورياً.
+                        </p>
+                        <div class="project-links">
+                            <a href="https://ytuyn.github.io/Appointment-System/" target="_blank" class="proj-link demo">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                            </a>
+                            <a href="#contact-section" class="order-service-btn" onclick="setService('نظام حجز المواعيد')">طلب هذه الخدمة</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- كرت 5 -->
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="landing_page.png" class="base-img" alt="نظام حجز المواعيد">
+                        <img src="html3.png" class="hover-img" alt="معاينة نظام الحجز">
+                    </div>
+                    
+                    <div class="project-info">
+                        <h3>
+                            <i class="fa-solid fa-calendar-check service-icon"></i> 
+                            صفحة هبوط لمتجر عطور
+                        </h3>
+                        <p class="project-description" style="font-size: 0.9rem; color: #e0e6ed; margin: 10px 0; line-height: 1.6; text-align: right;">
+                            صفحة هبوط احترافية ومبتكرة مصممة خصيصاً لتسليط الضوء على منتج معين (مثل العطور). تركز الصفحة على الجانب البصري الفاخر وتجربة المستخدم السلسة لزيادة مبيعاتك وتحويل الزوار لمشترين.
+                        </p>
+                        <div class="project-links">
+                            <a href="https://ytuyn.github.io/landing-page/" target="_blank" class="proj-link demo">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                            </a>
+                            <a href="#contact-section" class="order-service-btn" onclick="setService('صفحة هبوط لمتجر عطور')">طلب هذه الخدمة</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div> 
+        </section>
+
+        <!-- قسم نموذج الطلب -->
+        <section id="contact-section">
+            <div class="contact-box">
+                <h2>طلب خدمة سريعة</h2>
+                <p>املأ بياناتك أدناه وسنتواصل معك في أقرب وقت ممكن لمناقشة التفاصيل</p>
+
+                <form id="ajax-form" action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="98cf939a-348d-4f8c-9649-bd6e6d1de605">
+                    <div class="form-group">
+                        <input type="text" name="الاسم" class="form-control" placeholder="الاسم الكريم" required>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" name="وسيلة التواصل" class="form-control" placeholder="رقم الجوال أو الإيميل" required>
+                    </div>
+
+                    <div class="form-group">
+                        <select id="service-select" name="الخدمة المطلوبة" class="form-control" required>
+                            <option value="" disabled selected>اختر الخدمة المطلوبة...</option>
+                            <option value="منصة كورسات تعليمية">منصة كورسات تعليمية</option>
+                            <option value="تصميم صفحة روابط البايو">صفحة روابط البايو</option>
+                            <option value="تصميم بورتفوليو شخصي">بورتفوليو شخصي</option>
+                            <option value="نظام حجز مواعيد">نظام حجز مواعيد</option>
+                            <option value="صفحة هبوط لمتجر عطور">صفحة هبوط لمتجر عطور</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <textarea name="ملاحظات العميل" class="form-control" placeholder="ملاحظات إضافية أو ميزات تود إضافتها (اختياري)..."></textarea>
+                    </div>
+
+                    <button type="submit" id="submit-btn" class="submit-btn">إرسال الطلب</button>
+                </form>
+
+                <!-- صندوق رسالة النجاح -->
+                <div id="success-message" class="success-message">
+                    <i class="fa-solid fa-circle-check"></i>
+                    <h4>تم إرسال طلبكِ بنجاح!</h4>
+                    <p>شكراً لك، سيتم مراجعة البيانات والتواصل معكِ قريباً جداً.</p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- قسم الفوتر (Footer) -->
+    <footer class="footer-section">
+      <div class="footer-container">
+        <!-- شعار ووصف مختصر -->
+        <div class="footer-brand">
+          <h3 class="footer-logo">Programming</h3>
+          <p>أكواد احترافية لتبني مستقبل مشروعك</p>
+        </div>
+
+        <!-- روابط مواقع التواصل الاجتماعي والمنصات -->
+        <div class="footer-socials">
+          <h4>تواصل معنا </h4>
+          <div class="social-links">
+            <!-- انستغرام -->
+            <a href="https://www.instagram.com/programing_prg?utm_source=qr" target="_blank" aria-label="Instagram" class="social-icon instagram" title="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <!-- منصة إكس / تويتر -->
+            <a href="https://www.youtube.com/@programing_prg" target="_blank" aria-label="Youtube" class="social-icon twitter" title="Youtube">
+              <i class="fab fa-youtube"></i>
+            </a>
+            <!-- تيك توك -->
+            <a href="https://www.tiktok.com/@programing_prg?_r=1&_t=zs-97l9nw3tqwy" target="_blank" aria-label="TikTok" class="social-icon tiktok" title="TikTok">
+              <i class="fab fa-tiktok"></i>
+            </a>
+            <!-- خمسات -->
+            <a href="https://khamsat.com/designing/landing-page-design/4457383-%D8%A8%D8%B1%D9%85%D8%AC%D8%A9-%D9%88%D8%AA%D8%B5%D9%85%D9%8A%D9%85-%D8%B5%D9%81%D8%AD%D8%A9-%D9%87%D8%A8%D9%88%D8%B7-%D8%AA%D9%81%D8%A7%D8%B9%D9%84%D9%8A%D8%A9-%D9%88%D9%85%D8%AA%D8%AC%D8%A7%D9%88%D8%A8%D8%A9" target="_blank" aria-label="Khamsat" class="social-icon khamsat" title="خمسات">
+              <i class="fas fa-hand-holding-usd"></i>
+            </a>
+            <!-- البريد الإلكتروني -->
+            <a href="mailto:devservices.sa@gmail.com" class="social-icon email" aria-label="Email" title="البريد الإلكتروني">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- حقوق الحفظ -->
+      <div class="footer-bottom">
+        <p>&copy; 2026 جميع الحقوق محفوظة لـ <span>Programming</span></p>
+      </div>
+    </footer>
+    <script>
+        const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
+    const hamburgerIcon = hamburger.querySelector('i');
+
+    // فتح وإغلاق القائمة عند الضغط على زر البرجر
+    hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+        
+        // تغيير أيقونة البرجر إلى X عند الفتح
+        if (navLinks.classList.contains('active')) {
+            hamburgerIcon.classList.remove('fa-bars');
+            hamburgerIcon.classList.add('fa-xmark');
+        } else {
+            hamburgerIcon.classList.remove('fa-xmark');
+            hamburgerIcon.classList.add('fa-bars');
+        }
+    });
+
+    // إغلاق القائمة عند الضغط على أي رابط داخلها
+    document.querySelectorAll('.nav-links a').forEach(link => {
+        link.addEventListener('click', () => {
+            navLinks.classList.remove('active');
+            hamburgerIcon.classList.remove('fa-xmark');
+            hamburgerIcon.classList.add('fa-bars');
+        });
+    });
+    
+        // دالة ربط الكروت بالقائمة تلقائياً
+        function setService(serviceValue) {
+            document.getElementById('service-select').value = serviceValue;
+        }
+
+        // سكريبت إرسال البيانات في الخلفية وعرض رسالة النجاح بدون إعادة تحميل الصفحة
+        const form = document.getElementById("ajax-form");
+        const submitBtn = document.getElementById("submit-btn");
+        const successMessage = document.getElementById("success-message");
+
+        form.addEventListener("submit", function(e) {
+            e.preventDefault(); // منع الصفحة من الانتقال لموقع آخر
+            
+            submitBtn.textContent = "جاري الإرسال...";
+            submitBtn.disabled = true;
+
+            const data = new FormData(form);
+            
+            fetch(form.action, {
+                method: form.method,
+                body: data,
+                headers: { 'Accept': 'application/json' }
+            })
+            .then(response => {
+                if (response.ok) {
+                    form.reset(); // تصفير الحقول
+                    form.style.display = "none"; // إخفاء الفورم
+                    successMessage.style.display = "block"; // إظهار رسالة النجاح الفخمة
+                } else {
+                    alert("عذراً، حدث خطأ أثناء إرسال الطلب. يرجى المحاولة لاحقاً.");
+                    submitBtn.textContent = "إرسال الطلب";
+                    submitBtn.disabled = false;
+                }
+            })
+            .catch(error => {
+                alert("عذراً، تأكد من الاتصال بالإنترنت وحاول مجدداً.");
+                submitBtn.textContent = "إرسال الطلب";
+                submitBtn.disabled = false;
+            });
+        });
+    </script>
+</body>
+</html>
